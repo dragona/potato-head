@@ -3,7 +3,9 @@ package mg.studio.android.lab001;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,4 +28,47 @@ public class MainActivity extends AppCompatActivity {
         shoes = findViewById(R.id.shoes);
     }
 
+    public void cbMouth(View view) {
+        mToast("cbMouth");
+    }
+
+    public void cbArms(View view) {
+        mToast("cbArms");
+    }
+
+    public void cbEars(View view) {
+        mToast("cbEars");
+    }
+
+    public void cbHat(View view) {
+        mToast("cdHat");
+    }
+
+    public void cbEyebrow(View view) {
+        mToast("cbEyebrow");
+    }
+
+    public void cbEye(View view) {
+        mToast("cbEyebrow");
+    }
+
+    public void cbGlasses(View view) {
+        mToast("cbGlasses");
+    }
+
+    public void cbMustache(View view) {
+        mToast("cbMustache");
+    }
+
+    public void cbNose(View view) {
+        mToast("cbNose");
+    }
+
+    public void cbShoes(View view) {
+        mToast("cbShoes");
+    }
+
+    private void mToast(String text) {
+        Toast.makeText(this, text, Toast.LENGTH_LONG).show();
+    }
 }
